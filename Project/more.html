@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>more</title>
+	<link rel="stylesheet" href="Tstyle.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+ </head>
+<body>
+<div class ="container">
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="images/a.jpg" ></div>
+    <div class="swiper-slide"><img src="images/b.jpg" ></div>
+    <div class="swiper-slide"><img src="images/c.jpg" ></div>
+    <div class="swiper-slide"><img src="images/d.jpg" ></div>
+	<div class="swiper-slide"><img src="images/e.jpg" ></div>
+    <div class="swiper-slide"><img src="images/f.jpg" ></div>
+    <div class="swiper-slide"><img src="images/g.jpg" ></div>
+
+  </div>
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+	autoplay:{
+		delay:3000,
+		disableOnInteraction: false,
+	},
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+	clickable:true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
+</body>
+</html>
